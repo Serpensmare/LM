@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="#000000"/>
+  <g fill="#8B0000">
+    <!-- L - bold blocky letter -->
+    <rect x="10" y="15" width="10" height="70"/>
+    <rect x="10" y="75" width="35" height="10"/>
+    
+    <!-- M - bold blocky letter with overlapping effect -->
+    <!-- Left vertical stroke -->
+    <rect x="50" y="15" width="10" height="70"/>
+    <!-- Right vertical stroke -->
+    <rect x="80" y="15" width="10" height="70"/>
+    <!-- M center diagonal (overlaps L's bottom-right corner) -->
+    <polygon points="50,15 60,15 65,50 55,50" fill="#8B0000"/>
+    <polygon points="60,15 80,15 75,50 65,50" fill="#8B0000"/>
+    <!-- Overlap effect: M's bottom-left diagonal overlaps L's bottom-right -->
+    <polygon points="45,75 50,75 55,85 50,85" fill="#8B0000"/>
+  </g>
+</svg>

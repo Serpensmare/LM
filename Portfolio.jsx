@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Linkedin, Twitter, Instagram, MessageCircle, ChevronDown } from 'lucide-react';
+import { Linkedin, Twitter, Instagram, MessageCircle, ChevronDown, Phone } from 'lucide-react';
 
 
 
@@ -41,6 +41,22 @@ const Portfolio = () => {
       description: 'Organized 2 successful events in Bath before venue closure. Planning full makeover and relaunch when back in Bath. Building a recurring electronic music night with local and international DJs.',
 
       highlights: ['2 successful events', 'Venue partnerships', 'Relaunch planned']
+
+    },
+
+    {
+
+      year: '2024',
+
+      name: 'Bath DJ Studio',
+
+      type: 'DJ Studio Rental & Video Production',
+
+      status: 'Paused',
+
+      description: 'Transformed my student room into a fully equipped DJ studio for rent. Provided lighting, multi-camera recording, and full editing service to deliver polished DJ set videos. Gained enough traction that local events started renting my DJ decks as an additional paid service, including delivery and pickup.',
+
+      highlights: ['Multi-camera recording setup', 'Full video editing service', 'Equipment rental for events', 'Delivery and pickup service']
 
     },
 
@@ -114,13 +130,13 @@ const Portfolio = () => {
 
       year: '2025',
 
-      name: 'Restaurant Websites',
+      name: 'Websites',
 
       type: 'Web Development (LATAM)',
 
       status: 'Active',
 
-      description: 'Building fast, modern websites for restaurants across Santiago. Cold-calling in Spanish, delivering custom sites with AI-assisted development.',
+      description: 'Building fast, modern websites for businesses across Santiago. Delivering custom sites with AI-assisted development.',
 
       highlights: ['Squisito (Italian restaurant)', 'TACU TACU Restaurante', 'Multiple cafés in pipeline']
 
@@ -284,7 +300,7 @@ const Portfolio = () => {
 
             <p className="text-lg leading-relaxed max-w-2xl">
 
-              Swiss-Italian entrepreneur in Santiago. AI automation, web dev, 360° tours, consumer brands, and deep house nights. From cold-calling restaurants in Spanish to deploying AI agents for SMEs.
+              Swiss-Italian entrepreneur in Santiago. AI automation, web dev, 360° tours, consumer brands, and deep house nights. Building across LATAM and Europe.
 
             </p>
 
@@ -472,11 +488,11 @@ const Portfolio = () => {
 
               <div className="space-y-4 text-sm leading-relaxed">
 
-                <p>University of Bath student (International Management & Spanish) on exchange at PUC Chile, funded by the Turing Scheme.</p>
+                <p>Swiss-Italian dual national studying International Management & Spanish at University of Bath, currently on exchange at PUC Chile.</p>
 
-                <p>Swiss-Italian dual national. Brazilian Jiu-Jitsu athlete for the Swiss national team.</p>
+                <p>Brazilian Jiu-Jitsu athlete competing for the Swiss national team. The discipline from the mats translates directly to building—both require relentless iteration and mental resilience.</p>
 
-                <p>Based in Santiago, building across LATAM and Europe simultaneously.</p>
+                <p>Based in Santiago, operating across LATAM and Europe. Time zones are just numbers when you're shipping products.</p>
 
               </div>
 
@@ -486,15 +502,15 @@ const Portfolio = () => {
 
             <div className="border-4 border-black p-8">
 
-              <h3 className="text-2xl font-black mb-4 text-red-600">APPROACH</h3>
+              <h3 className="text-2xl font-black mb-4 text-red-600">PHILOSOPHY</h3>
 
               <div className="space-y-4 text-sm leading-relaxed">
 
-                <p>Execution-first builder. Sell first, refine later. Cold-call restaurants, close deals in CLP, deploy fast.</p>
+                <p>Ship fast, learn faster. I'd rather launch something imperfect and iterate than perfect something nobody wants.</p>
 
-                <p>Heavy use of AI dev tools: Cursor, Lovable, Claude Code. From idea to MVP in days, not months.</p>
+                <p>AI isn't replacing builders—it's amplifying them. I use Cursor, Lovable, and Claude to go from concept to deployed product in days, not months.</p>
 
-                <p>Building in public via Instagram, X, LinkedIn. Content as a growth channel.</p>
+                <p>Building in public isn't marketing—it's accountability. Every post, every update, every failure is a lesson shared.</p>
 
               </div>
 
@@ -542,13 +558,15 @@ const Portfolio = () => {
 
               <div className="space-y-4 text-sm leading-relaxed">
 
-                <p>Scaling Wesi Ltd's AI agent offerings to consulting and financial advisory firms across LATAM.</p>
+                <p>Scaling Wesi Ltd's AI agent platform—helping consulting and financial firms across LATAM automate client acquisition and operations.</p>
 
-                <p>Closing restaurant website deals across Santiago.</p>
+                <p>Building custom websites for businesses across Santiago. Every site is a new challenge, a new story.</p>
 
-                <p>AutoFolder awaiting Chrome Store approval.</p>
+                <p>AutoFolder is live and functional, waiting for Chrome Store approval. The bureaucracy moves slower than my code.</p>
 
-                <p>Training BJJ daily while balancing university and ventures.</p>
+                <p>DJing when the opportunity strikes—deep house, tech house, Afro-house. The decks are an extension of the same creative energy I bring to code.</p>
+
+                <p>Training BJJ daily. The mat teaches you that every failure is just a setup for the next move.</p>
 
               </div>
 
@@ -602,7 +620,9 @@ const Portfolio = () => {
 
             >
 
-              <MessageCircle size={24} />
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
 
               BOOK A CALL
 
@@ -666,7 +686,7 @@ const Portfolio = () => {
 
             <div>
 
-              <h3 className="text-xl font-black mb-3">Last Updated: November 2024</h3>
+              <h3 className="text-xl font-black mb-3">Last Updated: November 2025</h3>
 
               <p>This Privacy Policy describes how Luca Marrella and Wesi Ltd ("we", "our", "us") collect, use, and protect your personal information across our websites, applications, and services.</p>
 
